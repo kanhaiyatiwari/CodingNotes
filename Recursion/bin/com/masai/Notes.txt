@@ -1,0 +1,2 @@
+question 7:-
+skip all the  a's from String
