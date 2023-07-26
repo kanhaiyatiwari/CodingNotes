@@ -20,15 +20,3 @@ run-time
 
 comple time:-overloading
 runtime:-overriding
-
-what is java
-ans java is highlalavel object-orinted programing langualgee
-
-type of ploymore pysome
-comple-time
-run-time
-
-comple time:-overloading
-runtime:-overriding
-
-what is encaptulation
