@@ -1,0 +1,118 @@
+what is functinal programing
+a functional program  a kind pradigm which means that we can perform our wo
+k based on function no to class 
+
+2
+what is functinal interface
+ans=->a a interface which contains only one abstract mathord 
+it can contains as many static ,defaout and also can contains
+Object class but cant contains more then one abstract mathord;
+
+//using lambda expration
+		Inter in2=(String name)->{
+			System.out.println("hello ji "+"\n"+name);
+		};
+		in2.sayHello("kalu");
+
+
+}
+Note ->
+in lambda expration the in arrgument list there some imp roulse
+1 ->the data type is optinal
+example
+
+Inter in2=(name)->{
+			System.out.println("hello ji "+"\n"+name);
+		};
+		in2.sayHello("kalu");
+}
+2->
+if in argoument if there is only one parametter then we can also ignore() bracket
+Inter in2=name->{
+			System.out.println("hello ji "+"\n"+name);
+		};
+		in2.sayHello("kalu");
+}
+	
+	Note in zero or more prameter sall() is imp;
+	
+	
+	public static void main(String[] args) {
+Intr i1 = (n1,n2) -> {
+return n1+n2;
+};
+//if only a single statment body is there then {} is optional
+//and if we don't take the {} then return keyword is not allowed
+Intr i2 = (n1,n2) -> n1+n2;
+System.out.println(i1.add(10,20));
+System.out.println(i2.add(50,60));
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Topic 2 Mathord refrance;
+
+Mathord rerfrance is just a sortcut of lambda expration
+with using this we can use other class mathord how have same creadantial
+
+to refcre a Static mathord 
+- ClassName::MathordName;
+
+@FunctionalInterface
+interface Intr{
+void sayHello(String name);
+}
+public class Main {
+public static void fun1(String s){
+System.out.println("Using static Method reference Welcome "+s);
+}
+public static void main(String[] args) {
+Intr i1 = Main::fun1;
+i1.sayHello("Admin");
+}
+}
+
+to refer Non static mathord
+2:-
+Object::mathordName;
+
+@FunctionalInterface
+interface Intr{
+void printNumber(int number);
+}
+public class Main {
+public void fun1(int num){
+System.out.println("Using non-static Method reference Welcome "+num);
+}
+public static void main(String[] args) {
+Intr i1 = new Main()::fun1;
+i1.printNumber(12);
+Intr i2 = System.out::print;
+i2.printNumber(15);
+}
+}
+
+3
+To refer a cunstructor 
+className::new;
+
+@FunctionalInterface
+interface Intr{
+void sayHello();
+}
+public class Main {
+Main(){
+System.out.println("Method reference using Constructor");
+}
+public static void main(String[] args) {
+
+
+Intr i1 = Main::new;
+i1.sayHello();
+}
+}
+
+
+
+
