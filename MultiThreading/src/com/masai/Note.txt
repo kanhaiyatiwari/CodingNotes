@@ -1,0 +1,25 @@
+Life-cycle of a Thread (State of a thread):
+start thread
+
+runable state
+running state
+block state
+dead state
+
+sate priority
+min p->1
+max priorty->10
+nor priory ->5
+
+
+suspending thread 
+1 time
+condionaly
+unconditinaly
+
+
+t.join() or t.sleep() that it will stop the patrend mathord
+and wait until for t thread
+Thread.join i will stop the current thread and wait for other thread
+
+Note always use start() first thre join or sleep
