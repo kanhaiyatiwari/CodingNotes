@@ -1,0 +1,34 @@
+input streem api blongs to java.util.streem package;
+
+From java 8, Collection interface provides following method to gets a Stream obj.
+public default Stream<T>stream();
+Note: We can use Stream as generic type for example:
+Stream<String>: represents sequence of String object from a source(Collection object).
+Stream<Employee>: represents sequence of Employee object from a source(Collection object).
+
+Methods in Stream interface:
+
+1. Intermediate methods
+2. Terminal methods
+
+1 Intermediate methods they are returning  new Stream and dose not return the final 
+output 
+it hase tow mathord 
+I:- map II:- filter
+public Stream map(Function f);
+public Stream filter(Predicate p);
+
+2 Teminal mathord
+it returns the final stream after colling it we can not use Strem again
+
+M:-
+
+
+public void forEach(Consumer c);
+public R collect(Collector c);
+public Optional<T> min(Comparator c);
+public Optional<T> max(Comparator c);
+public boolean anyMatch(Predicate p)
+public boolean allMatch(Predicate p)
+public long count();
+

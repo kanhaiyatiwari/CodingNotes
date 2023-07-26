@@ -1,0 +1,17 @@
+predicate inter face 
+it hase a mathor withch is test();
+and it return chack condition and then return the boolean type
+
+
+2:-cunsumer<T t> it helps to change any thing and print oly mathord tyoe is void
+public void accept(T t):
+3:- Supplire it has a mathord  get() with do not take any parameter argurment but  
+
+it is takeing a Type and we can chagenge the return type;
+
+4.java.util.function.Function<T,R>
+This interface defines an abstract method which will takes T type of object as parameter and returns R
+type of object.
+
+
+Note:- by using Collect(collector.toList()) we can conver Stream to list;
