@@ -1,0 +1,53 @@
+create table administrator
+ (
+ 
+ username varchar(255),
+ password varchar(255)
+ );
+ 
+ create table course
+ (
+ courseid int primary key  ,
+ courseName varchar(255),
+ fee varchar(255),
+ courseDescription varchar(255)
+ );
+
+
+create table  faculty
+(
+facultyid int primary key ,
+facultyname varchar(12),
+ facultyaddress varchar(12),
+mobile  varchar(255) unique not null,
+email   varchar(255)unique not null,
+username  varchar(255)unique,
+password varchar(12)unique
+);
+
+create table  batch
+(
+batchid int primary key ,
+courseid int ,
+facultyid int,
+numberofStudents int,
+batchstartDate  DATE,
+duration  varchar(12),
+foreign key (courseid) references course(courseid ),
+
+foreign key (facultyid) references faculty(facultyid)
+);
+     
+create table  CoursPlan
+(
+
+planid int primary key ,
+ batchid   int,
+daynumber  int,
+topic varchar(255),
+status varchar(255),
+foreign key ( batchid ) references   batch( batchid )
+
+);
+
+ 
